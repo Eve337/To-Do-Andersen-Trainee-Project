@@ -1,0 +1,51 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.mainToDoField {
+    margin: auto;
+   /* display: flex;*/
+    height: 80vh;
+    width: 40vw;
+
+    border: 5px solid gray;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+}
+
+.addField {
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    display: flex;
+}
+
+.addTaskInput {
+    width: 100%;
+}
+
+.addBtn {
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.taskList {  /* UL */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+}
+
+.task { /* LI */
+    background-color: #b68b8b;
+    margin: 2px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+} 
