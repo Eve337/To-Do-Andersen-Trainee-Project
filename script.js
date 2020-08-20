@@ -1,17 +1,15 @@
-let nodeList = document.querySelectorAll(".task"); //task list
+let ulList = document.querySelector(".taskList"); //task list
 let inputValue = document.querySelector(".addTaskInput").value; //input field value
 let addButton = document.querySelector(".addBtn"); //add button
+let liArray = document.getElementsByClassName("task");
 
-addButton.addEventListener("click", addFunc(nodeList, inputValue));
-
-
-function addFunc (list, value) {
-    let liForTask = document.createElement("LI");
-    let textInside = document.createTextNode(value);
-    liForTask.appendChild(textInside);
-    list.appendChild(liForTask);
+let addFunc = () => {
+    let liForTask = document.createElement("li");
+    liForTask.classList.add("task");
+    let textInside = document.createTextNode(inputValue);
+    liForTask.append(textInside);
+    ulList.append(liForTask);
 }
 
+addButton.addEventListener("click", addFunc);
 
-
-console.log(nodeList);
