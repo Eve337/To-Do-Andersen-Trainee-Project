@@ -9,20 +9,37 @@
 </head>
 <body>
     <nav></nav>
-    <section>
-        <div class="mainToDoField">
+    <div class="rootOfSPA">
+        <button onclick="hideToDoField()">Hide/Show</button>
+       <div class="mainToDoField">
             <h1 class="mainTitle">To-Do-Test-Andersen-Trainee</h1>
-        <div class="addField">
-            <input class="addTaskInput" type="text" placeholder="add smth" value="test">
-            <span class="addBtn">Add</span>
-        </div>
+            <div class="addField">
+                <input class="addTaskInput" type="text" placeholder="add smth" value="test">
+                <span class="addBtn">Add</span>
+            </div>
             <ul class="taskList">
                 <li class="task">Task 1</li>
                 <li class="task">Task 2</li>
                 <li class="task">Task 3</li>
                 <li class="task">Task 4</li>
             </ul>
+        </div> 
+
+        <div class="auth">
+            <h1>Sign in</h1>
+            <form class="signIn">
+                <div class="signInPart">
+                    <label for="login">Login</label>
+                    <input type="text" id="login"> 
+                </div>
+                
+                <div class="signInPart">
+                    <label for="pass">Pass</label>
+                    <input type="password">
+                    <input class="confirmLogin" type="submit">
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
 </body>
 </html>

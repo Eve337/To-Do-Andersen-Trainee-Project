@@ -9,7 +9,7 @@ body{
 
 .mainToDoField {
     margin: auto;
-   /* display: flex;*/
+   
     height: 80vh;
     width: 40vw;
 
@@ -60,5 +60,38 @@ body{
 
 .close {
     text-align: right;
-    width: 20%;
+    background-color: azure;
+    position: absolute;
+    right: 0;
+    top: 0;
+  
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.auth {
+    height: 240px;
+    width: 320px;
+    background-color: azure;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    opacity: 100%;
+}
+
+.signInPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmLogin {
+    margin-top: 20px;
 }
